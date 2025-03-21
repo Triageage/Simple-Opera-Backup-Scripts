@@ -50,6 +50,12 @@ If you encounter an execution policy restriction, use:
 - Deletes backups older than **2 months**.
 - Provides log messages in the console.
 
+## Restoring Backup
+To restore a backup, replace the following files and folders with those from your backup:
+- **Bookmarks:** Replace the `Bookmarks` file in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default`
+- **Extensions:** Replace the `Extensions` folder in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
+- **Cache (Optional):** Replace the cache in `C:\Users\<YOUR USERNAME>\AppData\Local\Opera Software\Opera Stable\Default`
+
 ## Customization
 - Change the default backup directory by modifying this line:
   ```powershell
