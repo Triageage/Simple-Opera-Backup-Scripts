@@ -42,6 +42,12 @@ If you encounter any issues with `backup_opera_Test.ps1`, try using `Opera_Bookm
 - Cleans up backups older than **2 months**.
 - Provides user-friendly log messages via pop-ups.
 
+## Restoring Backup
+To restore a backup, replace the following files and folders with those from your backup:
+- **Bookmarks:** Replace the `Bookmarks` file in `C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default`
+- **Extensions:** Replace the `Extensions` folder in `C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
+- **Cache (Optional):** Replace the cache in `C:\Users\krohi\AppData\Local\Opera Software\Opera Stable\Default`
+
 ## Customization
 - Change the default backup directory by modifying this line in the script:
   ```ahk
