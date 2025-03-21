@@ -32,6 +32,31 @@ If you encounter any issues with `backup_opera_Test.ps1`, try using `Opera_Bookm
    autohotkey.exe Opera_Backup.ahk
    ```
 
+## Automating the Backup with Task Scheduler
+To automate the backup process, create a scheduled task in Windows Task Scheduler:
+
+### Step 1: Open Task Scheduler
+1. Press `Win + R`, type `taskschd.msc`, and hit `Enter` to open Task Scheduler.
+2. Click **Create Basic Task...** (on the right).
+3. Name it **"Opera Backup"** and click **Next**.
+
+### Step 2: Configure the Schedule
+1. Select **Monthly**, then click **Next**.
+2. Choose the **1st day of the month**, then click **Next**.
+3. Select **Start a Program**, then click **Next**.
+
+### Step 3: Set Up the Script Execution
+1. In **Program/Script**, enter:
+   ```
+   powershell.exe
+   ```
+2. In **Add Arguments**, enter:
+   ```
+   -ExecutionPolicy Bypass -File "D:\Scripts\backup_opera.ps1"
+   ```
+   *(Change `D:\Scripts\backup_opera.ps1` to the actual path where you saved the script.)*
+3. Click **Finish**.
+
 ## Script Functionality
 - Detects the Opera installation path automatically.
 - Asks the user for a backup save location (defaults to `C:\Opera_Backup`).
@@ -44,9 +69,9 @@ If you encounter any issues with `backup_opera_Test.ps1`, try using `Opera_Bookm
 
 ## Restoring Backup
 To restore a backup, replace the following files and folders with those from your backup:
-- **Bookmarks:** Replace the `Bookmarks` file in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default`
-- **Extensions:** Replace the `Extensions` folder in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
-- **Cache (Optional):** Replace the cache in `C:\Users\<YOUR USERNAME>\AppData\Local\Opera Software\Opera Stable\Default`
+- **Bookmarks:** Replace the `Bookmarks` file in `C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default`
+- **Extensions:** Replace the `Extensions` folder in `C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
+- **Cache (Optional):** Replace the cache in `C:\Users\krohi\AppData\Local\Opera Software\Opera Stable\Default`
 
 ## Customization
 - Change the default backup directory by modifying this line in the script:
@@ -66,4 +91,3 @@ To restore a backup, replace the following files and folders with those from you
 
 ## License
 This script is open-source and free to use and modify. Enjoy safe and easy Opera backups!
-
