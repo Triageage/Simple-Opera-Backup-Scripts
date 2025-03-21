@@ -3,6 +3,13 @@
 ## Overview
 This script automates the backup process for Opera browser bookmarks, extensions, and cache files. It finds the Opera installation, determines the profile path, and saves backups in a timestamped folder. It also automatically deletes backups older than 2 months.
 
+## Available Scripts
+There are two versions of the script available:
+1. **Opera_Bookmarks_Backup_Working.ahk** – A stable version that has been tested and works reliably.
+2. **Opera_Bookmarks_BackupTest.ahk** – The latest test version with potential improvements and fixes.
+
+If you encounter any issues with `backup_opera_Test.ps1`, try using `Opera_Bookmarks_Backup_Working.ahk` instead.
+
 ## Requirements
 - **Windows OS**
 - **AutoHotkey v2.0+** (Download from [AutoHotkey Official Site](https://www.autohotkey.com/))
