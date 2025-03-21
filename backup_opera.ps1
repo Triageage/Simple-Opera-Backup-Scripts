@@ -1,10 +1,10 @@
 # Define source paths
-$operaBookmarks = "C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default\Bookmarks"
-$operaExtensions = "C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions"
-$operaCache = "C:\Users\krohi\AppData\Local\Opera Software\Opera Stable\Default"
+$operaBookmarks = "C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Bookmarks"
+$operaExtensions = "C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions"
+$operaCache = "C:\Users\<YOUR USERNAME>\AppData\Local\Opera Software\Opera Stable\Default"
 
 # Define backup destination
-$backupFolder = "C:\Opera_Backup"
+$backupFolder = "<YOUR BACKUP FOLDER PATH>"
 $timestamp = Get-Date -Format "yyyy-MM-dd"
 $backupPath = "$backupFolder\Backup_$timestamp"
 
