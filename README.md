@@ -40,6 +40,31 @@ If you encounter an execution policy restriction, use:
    ```
    *(Or use `backup_opera.ps1` if needed: ` -File C:\Opera_Backup\backup_opera.ps1` )*
 
+## Automating the Backup with Task Scheduler
+To automate the backup process, create a scheduled task in Windows Task Scheduler:
+
+### Step 1: Open Task Scheduler
+1. Press `Win + R`, type `taskschd.msc`, and hit `Enter` to open Task Scheduler.
+2. Click **Create Basic Task...** (on the right).
+3. Name it **"Opera Backup"** and click **Next**.
+
+### Step 2: Configure the Schedule
+1. Select **Monthly**, then click **Next**.
+2. Choose the **1st day of the month**, then click **Next**.
+3. Select **Start a Program**, then click **Next**.
+
+### Step 3: Set Up the Script Execution
+1. In **Program/Script**, enter:
+   ```
+   powershell.exe
+   ```
+2. In **Add Arguments**, enter:
+   ```
+   -ExecutionPolicy Bypass -File "D:\Scripts\backup_opera.ps1"
+   ```
+   *(Change `D:\Scripts\backup_opera.ps1` to the actual path where you saved the script.)*
+3. Click **Finish**.
+
 ## Script Functionality
 - Detects the Opera installation path automatically.
 - Prompts the user for a backup save location (defaults to `C:\Opera_Backup`).
