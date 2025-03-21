@@ -1,8 +1,8 @@
 #Requires AutoHotkey v2.0
 #SingleInstance Force
 
-backupPath := "C:\Opera_Backup"
-bookmarkFile := "C:\Users\krohi\AppData\Roaming\Opera Software\Opera Stable\Default\Bookmarks"
+backupPath := "<YOUR BACKUP PATH>"
+bookmarkFile := "C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Bookmarks"
 backupFile := backupPath "\Bookmarks_Backup_" A_Now ".json"
 
 ; Ensure the backup directory exists
