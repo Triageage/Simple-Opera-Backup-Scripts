@@ -73,6 +73,14 @@ To restore a backup, replace the following files and folders with those from you
 - **Extensions:** Replace the `Extensions` folder in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
 - **Cache (Optional):** Replace the cache in `C:\Users\<YOUR USERNAME>\AppData\Local\Opera Software\Opera Stable\Default`
 
+### Restoring Extensions Properly
+After replacing the `Extensions` folder:
+1. Restart Opera.
+2. Open `opera://extensions/` in the Opera browser.
+3. If extensions do not appear automatically, enable **Developer Mode** (toggle in the top-right corner).
+4. Click **Load Unpacked** and select the extension folder inside `Extensions`.
+5. Repeat for each extension if necessary.
+
 ## Customization
 - Change the default backup directory by modifying this line in the script:
   ```ahk
@@ -91,3 +99,4 @@ To restore a backup, replace the following files and folders with those from you
 
 ## License
 This script is open-source and free to use and modify. Enjoy safe and easy Opera backups!
+
