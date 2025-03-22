@@ -73,7 +73,7 @@ To restore a backup, replace the following files and folders with those from you
 - **Extensions:** Replace the `Extensions` folder in `C:\Users\<YOUR USERNAME>\AppData\Roaming\Opera Software\Opera Stable\Default\Extensions`
 - **Cache (Optional):** Replace the cache in `C:\Users\<YOUR USERNAME>\AppData\Local\Opera Software\Opera Stable\Default`
 
-### Restoring Extensions Properly
+### Restoring Extensions (MAY NOT WORK FOR ALL EXTENSIONS)
 After replacing the `Extensions` folder:
 1. Restart Opera.
 2. Open `opera://extensions/` in the Opera browser.
